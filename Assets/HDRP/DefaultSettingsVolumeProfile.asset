@@ -15,6 +15,7 @@ MonoBehaviour:
   components:
   - {fileID: 5805621898565032940}
   - {fileID: 9015631224601647054}
+  - {fileID: 6765919451498222918}
 --- !u!114 &5805621898565032940
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -27,10 +28,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d08ce26990eb1a4a9177b860541e702, type: 3}
   m_Name: Exposure
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   mode:
     m_OverrideState: 1
-    m_Value: 3
+    m_Value: 0
   meteringMode:
     m_OverrideState: 0
     m_Value: 2
@@ -166,6 +167,22 @@ MonoBehaviour:
   proceduralSoftness:
     m_OverrideState: 0
     m_Value: 0.5
+--- !u!114 &6765919451498222918
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a7ff42a8c5be6646ad3975f3a54c1eb, type: 3}
+  m_Name: DiffusionProfileList
+  m_EditorClassIdentifier: 
+  active: 0
+  diffusionProfiles:
+    m_OverrideState: 1
+    m_Value: []
 --- !u!114 &9015631224601647054
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -178,7 +195,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f086a068d4c5889438831b3ae9afc11c, type: 3}
   m_Name: Tonemapping
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   mode:
     m_OverrideState: 1
     m_Value: 2

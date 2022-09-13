@@ -16,9 +16,9 @@ MonoBehaviour:
     supportShadowMask: 1
     supportSSR: 0
     supportSSRTransparent: 0
-    supportSSAO: 1
+    supportSSAO: 0
     supportSSGI: 0
-    supportSubsurfaceScattering: 1
+    supportSubsurfaceScattering: 0
     sssSampleBudget:
       m_Values: 140000002800000050000000
       m_SchemaId:
@@ -45,7 +45,7 @@ MonoBehaviour:
       m_Values: 800000000001000000020000
       m_SchemaId:
         m_Id: With3Levels
-    supportDecals: 1
+    supportDecals: 0
     supportDecalLayers: 0
     supportSurfaceGradient: 1
     decalNormalBufferHP: 0
@@ -89,7 +89,7 @@ MonoBehaviour:
       maxDecalsOnScreen: 512
       maxLightsPerClusterCell: 8
       maxLocalVolumetricFogSize: 0
-      maxLocalVolumetricFogOnScreen: 256
+      maxLocalVolumetricFogOnScreen: 10
     hdShadowInitParams:
       maxShadowRequests: 128
       directionalShadowsDepthBits: 32
@@ -231,7 +231,7 @@ MonoBehaviour:
       - 2
       - 3
       - 5
-      RTGIRaySteps: 200000003000000040000000
+      RTGIRaySteps: 20000000300000000a000000
       RTGIDenoise: 010101
       RTGIHalfResDenoise: 010000
       RTGIDenoiserRadius:
@@ -264,11 +264,11 @@ MonoBehaviour:
       Fog_Budget:
       - 0.166
       - 0.33
-      - 0.666
+      - 1
       Fog_DepthRatio:
       - 0.666
       - 0.666
-      - 0.5
+      - 1
     m_ObsoleteLightLayerName0: 
     m_ObsoleteLightLayerName1: 
     m_ObsoleteLightLayerName2: 
