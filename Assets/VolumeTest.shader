@@ -195,8 +195,8 @@ Shader "Unlit/VolumeTest"
 
                 // Still need to clip pixels outside of the box because of the froxel buffer shape
                 bool overlap = Max3(abs(voxelCenterCS.x), abs(voxelCenterCS.y), abs(voxelCenterCS.z)) <= 1;
-                // if (!overlap)
-                //     clip(-1);
+                if (!overlap)
+                    clip(-1);
 
                 FragInputs fragInputs = BuildFragInputs(v2f, voxelCenterBS, voxelCenterCS);
                 GetVolumeData(fragInputs, v2f.viewDirectionWS, albedo, extinction);
@@ -216,10 +216,10 @@ Shader "Unlit/VolumeTest"
                 outColor = max(0, float4(saturate(albedo * extinction), extinction));
                 #endif
 
-                if (!overlap)
-                    outColor.ra += 0.1;
-                else
-                    outColor.ga += 0.2;
+                // if (!overlap)
+                //     outColor.ra += 0.1;
+                // else
+                //     outColor.ga += 0.2;
             }
             ENDHLSL
         }
